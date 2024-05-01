@@ -41,7 +41,21 @@ const Links = () => {
           {item}
         </motion.a>
       ))}
-      <Link to='/about'>
+      <Link to='/buying'>
+        <motion.span
+        variants={itemVariants}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}>
+        Buying
+        </motion.span></Link>
+        <Link to='/selling'>
+        <motion.span
+        variants={itemVariants}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}>
+        Selling
+        </motion.span></Link>
+        <Link to='/about'>
         <motion.span
         variants={itemVariants}
         whileHover={{ scale: 1.1 }}
